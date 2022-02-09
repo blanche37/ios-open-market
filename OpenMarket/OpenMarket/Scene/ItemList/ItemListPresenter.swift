@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+protocol ItemListProtocol { }
+
+class ItemListPresenter {
+    private let viewController: ItemListProtocol
+    
+    init(viewController: ItemListProtocol) {
+        self.viewController = viewController
+    }
+}

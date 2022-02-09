@@ -7,8 +7,14 @@
 import UIKit
 
 class ItemListViewController: UIViewController {
+    private lazy var presenter = ItemListPresenter(viewController: self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+}
+
+extension ItemListViewController: ItemListProtocol {
+    
 }
 
