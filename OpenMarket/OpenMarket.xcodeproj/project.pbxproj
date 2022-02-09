@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		43E2035927B36FE100F29DD6 /* ItemListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2035827B36FE100F29DD6 /* ItemListPresenter.swift */; };
 		43E2035E27B372A700F29DD6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 43E2035D27B372A700F29DD6 /* Alamofire */; };
+		43E2036227B373B800F29DD6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 43E2036127B373B800F29DD6 /* SnapKit */; };
 		C70FB0FB25BEF61C00C9924E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FB0FA25BEF61C00C9924E /* AppDelegate.swift */; };
 		C70FB0FD25BEF61C00C9924E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FB0FC25BEF61C00C9924E /* SceneDelegate.swift */; };
 		C70FB0FF25BEF61C00C9924E /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FB0FE25BEF61C00C9924E /* ItemListViewController.swift */; };
@@ -33,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E2035E27B372A700F29DD6 /* Alamofire in Frameworks */,
+				43E2036227B373B800F29DD6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,11 +58,26 @@
 			path = Scene;
 			sourceTree = "<group>";
 		};
+		43E2036027B373AF00F29DD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43E2036327B3863400F29DD6 /* ItemCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemCell;
+			sourceTree = "<group>";
+		};
 		C70FB0EE25BEF61C00C9924E = {
 			isa = PBXGroup;
 			children = (
 				C70FB0F925BEF61C00C9924E /* OpenMarket */,
 				C70FB0F825BEF61C00C9924E /* Products */,
+				43E2036027B373AF00F29DD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +95,7 @@
 				C70FB0FA25BEF61C00C9924E /* AppDelegate.swift */,
 				C70FB0FC25BEF61C00C9924E /* SceneDelegate.swift */,
 				43E2035B27B36FF000F29DD6 /* Scene */,
+				43E2036327B3863400F29DD6 /* ItemCell */,
 				C70FB10325BEF61D00C9924E /* Assets.xcassets */,
 				C70FB10525BEF61D00C9924E /* LaunchScreen.storyboard */,
 				C70FB10825BEF61D00C9924E /* Info.plist */,
@@ -103,6 +121,7 @@
 			name = OpenMarket;
 			packageProductDependencies = (
 				43E2035D27B372A700F29DD6 /* Alamofire */,
+				43E2036127B373B800F29DD6 /* SnapKit */,
 			);
 			productName = OpenMarket;
 			productReference = C70FB0F725BEF61C00C9924E /* OpenMarket.app */;
@@ -385,6 +404,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 43E2035C27B372A700F29DD6 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		43E2036127B373B800F29DD6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43E2035F27B372B700F29DD6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
