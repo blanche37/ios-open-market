@@ -13,6 +13,7 @@ class ItemListViewController: UIViewController {
     private lazy var tableView: UITableView = {
        let tableView = UITableView()
         tableView.dataSource = presenter
+        tableView.delegate = self
         tableView.register(ItemCell.self, forCellReuseIdentifier: "reuse")
         return tableView
     }()
@@ -21,6 +22,12 @@ class ItemListViewController: UIViewController {
         super.viewDidLoad()
         presenter.viewDidLoad()
         
+    }
+}
+
+extension ItemListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectRow()
     }
 }
 
@@ -35,5 +42,12 @@ extension ItemListViewController: ItemListProtocol {
             make.edges.equalTo(self.view)
         }
     }
+    
+    func presentItemViewController() {
+        let vc = ItemViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
+
+
 

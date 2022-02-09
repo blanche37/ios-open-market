@@ -10,6 +10,7 @@ import UIKit
 protocol ItemListProtocol {
     func updateNavigation()
     func updateView()
+    func presentItemViewController()
 }
 
 class ItemListPresenter: NSObject {
@@ -22,6 +23,10 @@ class ItemListPresenter: NSObject {
     func viewDidLoad() {
         viewController.updateNavigation()
         viewController.updateView()
+    }
+    
+    func didSelectRow() {
+        viewController.presentItemViewController()
     }
 }
 

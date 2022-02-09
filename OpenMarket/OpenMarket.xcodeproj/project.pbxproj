@@ -12,6 +12,8 @@
 		43E2036227B373B800F29DD6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 43E2036127B373B800F29DD6 /* SnapKit */; };
 		43E2036527B387AB00F29DD6 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2036427B387AB00F29DD6 /* ItemCell.swift */; };
 		43E2036727B387C700F29DD6 /* ItemCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2036627B387C700F29DD6 /* ItemCellPresenter.swift */; };
+		43E2036A27B38C6300F29DD6 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2036927B38C6300F29DD6 /* ItemViewController.swift */; };
+		43E2036C27B38C6D00F29DD6 /* ItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2036B27B38C6D00F29DD6 /* ItemPresenter.swift */; };
 		C70FB0FB25BEF61C00C9924E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FB0FA25BEF61C00C9924E /* AppDelegate.swift */; };
 		C70FB0FD25BEF61C00C9924E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FB0FC25BEF61C00C9924E /* SceneDelegate.swift */; };
 		C70FB0FF25BEF61C00C9924E /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FB0FE25BEF61C00C9924E /* ItemListViewController.swift */; };
@@ -23,6 +25,8 @@
 		43E2035827B36FE100F29DD6 /* ItemListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListPresenter.swift; sourceTree = "<group>"; };
 		43E2036427B387AB00F29DD6 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		43E2036627B387C700F29DD6 /* ItemCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellPresenter.swift; sourceTree = "<group>"; };
+		43E2036927B38C6300F29DD6 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		43E2036B27B38C6D00F29DD6 /* ItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenter.swift; sourceTree = "<group>"; };
 		C70FB0F725BEF61C00C9924E /* OpenMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70FB0FA25BEF61C00C9924E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C70FB0FC25BEF61C00C9924E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 			path = ItemCell;
 			sourceTree = "<group>";
 		};
+		43E2036827B38C3700F29DD6 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				43E2036927B38C6300F29DD6 /* ItemViewController.swift */,
+				43E2036B27B38C6D00F29DD6 /* ItemPresenter.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
 		C70FB0EE25BEF61C00C9924E = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 				C70FB0FC25BEF61C00C9924E /* SceneDelegate.swift */,
 				43E2035B27B36FF000F29DD6 /* Scene */,
 				43E2036327B3863400F29DD6 /* ItemCell */,
+				43E2036827B38C3700F29DD6 /* Item */,
 				C70FB10325BEF61D00C9924E /* Assets.xcassets */,
 				C70FB10525BEF61D00C9924E /* LaunchScreen.storyboard */,
 				C70FB10825BEF61D00C9924E /* Info.plist */,
@@ -186,10 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E2036A27B38C6300F29DD6 /* ItemViewController.swift in Sources */,
 				C70FB0FF25BEF61C00C9924E /* ItemListViewController.swift in Sources */,
 				43E2035927B36FE100F29DD6 /* ItemListPresenter.swift in Sources */,
 				C70FB0FB25BEF61C00C9924E /* AppDelegate.swift in Sources */,
 				C70FB0FD25BEF61C00C9924E /* SceneDelegate.swift in Sources */,
+				43E2036C27B38C6D00F29DD6 /* ItemPresenter.swift in Sources */,
 				43E2036527B387AB00F29DD6 /* ItemCell.swift in Sources */,
 				43E2036727B387C700F29DD6 /* ItemCellPresenter.swift in Sources */,
 			);
