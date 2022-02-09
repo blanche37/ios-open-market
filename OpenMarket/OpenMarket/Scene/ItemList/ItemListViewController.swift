@@ -13,7 +13,7 @@ class ItemListViewController: UIViewController {
     private lazy var tableView: UITableView = {
        let tableView = UITableView()
         tableView.dataSource = presenter
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuse")
+        tableView.register(ItemCell.self, forCellReuseIdentifier: "reuse")
         return tableView
     }()
   

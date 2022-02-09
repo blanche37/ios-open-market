@@ -31,8 +31,10 @@ extension ItemListPresenter: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuse", for: indexPath)
-        cell.textLabel?.text = "테스트"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "reuse", for: indexPath) as? ItemCell else {
+            return UITableViewCell()
+        }
+        cell.label.text = "테스트"
         return cell
     }
     
